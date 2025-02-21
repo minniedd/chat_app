@@ -14,9 +14,14 @@ class UserTile extends StatelessWidget {
           color: Theme.of(context).colorScheme.secondary,
           borderRadius: BorderRadius.circular(10)
         ),
-        child: Row(children: [
-          Icon(Icons.wb_cloudy_rounded),
-          Text(text)
+        margin: EdgeInsets.symmetric(vertical: 5,horizontal: 5),
+        padding: EdgeInsets.all(10),
+        child: Row(
+          children: [
+          SizedBox(width: 10,),
+          Icon(Icons.wb_cloudy_rounded,color: Colors.white,),
+          SizedBox(width: 10,),
+          Text(text,style: TextStyle(color: Colors.white),)
         ],),
       ),
     );
